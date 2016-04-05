@@ -1,0 +1,85 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 4-apr-2016, 17.39.40
+    Author     : Gabriele Porcheddu
+*/
+
+body
+ {
+    background :  graytext ;
+    font-family : serif ;
+
+    color :  white ;
+}
+h1
+ {
+    color: white;
+    font-weight: bold;
+    background-color :  #FF9933 ;
+    border-bottom :  3px solid white;
+}
+h2
+ {
+    background-color :  #FF9933 ;
+    border-bottom :  2px solid white;
+}
+h3
+ {
+    background-color :  #FF9933 ;
+    border-bottom :  1px solid white;
+}
+
+a:link 
+ {
+     font-weight: bold;
+     color:blue ;
+}
+a:visited
+ {
+     color: indigo ;
+}
+a:hover 
+ {
+     color: cyan;
+}
+a:active
+ {
+     color:buttonshadow;
+}
+
+ textarea{
+  border: 1px solid black; /* bordo degli elementi */
+  color:lightslategray ;            /* colore del testo     */
+}
+/* Focus sui campi */
+input:focus , textarea:focus {
+  border: 1px solid #FCA800; /* bordo degli elementi */
+  color:black ;            /* colore del testo     */
+}
+
+button:active {
+  border: 20px solid black; /* bordo degli elementi */
+  background-color: black;
+  color:black ;            /* colore del testo     */
+}
+
+table{
+    border-collapse: collapse;
+    border: 3px solid black;
+    background-color: green;
+}
+tr{
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+td {
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+tr.pari{
+    background-color: blue;
+}
