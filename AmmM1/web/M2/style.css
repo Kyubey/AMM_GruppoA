@@ -21,16 +21,19 @@ h1
     font-weight: bold;
     background-color :  #FF9933 ;
     border-bottom :  3px solid white;
+    text-align: center;
 }
 h2
  {
     background-color :  #FF9933 ;
     border-bottom :  2px solid white;
+    text-align: center;
 }
 h3
  {
     background-color :  #FF9933 ;
-    border-bottom :  1px solid white;
+    border-bottom :  2px solid white;
+    text-align: center;
 }
 
 a:link 
@@ -61,12 +64,26 @@ input:focus , textarea:focus {
   color:black ;            /* colore del testo     */
 }
 
-button:active {
-  border: 20px solid black; /* bordo degli elementi */
-  background-color: black;
-  color:black ;            /* colore del testo     */
+/* Modifica i pulsanti*/
+input.bottone{
+  position: relative;
+  left: 23%;
+  width: 30%;
+  height: 40px;
+  margin-top: 2%;
 }
 
+/* Modifica i pulsanti quando attivi*/
+input.bottone:active {
+  position: relative;
+  background-color: gray;
+  color:black ;            /* colore del testo     */
+  margin-top: 2%;
+  width: 30%;
+  left: 23%;
+}
+
+/* valori per sistemare la tabella di cliente */
 table{
     border-collapse: collapse;
     border: 3px solid black;
@@ -82,4 +99,141 @@ td {
 }
 tr.pari{
     background-color: blue;
+}
+
+/* modificano i campi di scrittura e i label di login e venditore*/
+form{
+    position: relative;
+    margin-left: 25%;
+    
+}
+#form {
+    position: relative;
+    color: black;
+    font-weight: bold;
+    height: 140px;
+    width: 260px;
+    background: window;
+    padding: 10px;
+    background-color: window;
+    
+}
+#form.input{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+label{
+    padding: 5%;
+}
+#form label{
+    color: black;
+    position: relative;
+    text-align: center;
+    display: inline-block;
+    margin-right: 10px;
+    width: 80px;
+    padding: 10px 0;
+}
+/* Valori per centrare il form di venditore */
+#venditore{
+    position: relative;
+    display: inline-block;
+    left: 20%;
+}
+#venditore label{
+    padding-right: 50%;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+@media only screen and (min-width:1024px) { 
+    #page {
+           width : 1024px;
+           margin-left : auto;
+           margin-right : auto;
+           margin-top : 25px;
+           margin-bottom : 25px;
+           box-shadow : 0 0 10px rgba(0, 0, 0, 0.2);
+   }
+   #sidebar1 {
+       float : left;
+       width : 20%;
+       padding-top: 0px;
+       padding-left : 5px;
+   }
+   #sidebar2 {
+       float : right;
+       width : 20%;
+       padding-right : 10px;
+   } 
+    #content {
+        margin-left : 22%;
+        margin-right : 20%;
+        padding-bottom : 10px;
+        padding-left : 10px;
+       border-left: 3px solid black;
+    } 
+}
+@media only screen and (min-width:400px) and (max-width:1024px) { 
+    
+/* Valori per avere 2 colonne*/
+    #page {
+           width : 1000px;
+           margin-left : auto;
+           margin-right : auto;
+           margin-top : 25px;
+           margin-bottom : 25px;
+           box-shadow : 0 0 10px rgba(0, 0, 0, 0.2);
+   }
+   #sidebar1 {
+       float : left;
+       width : 20%;
+       padding-top: 0px;
+       padding-left : 5px;
+   }
+   #sidebar2 {
+       float : left;
+       width : 20%;
+       padding-right : 10px;
+   } 
+    #content {
+        margin-left : 20%;
+        margin-right : 20%;
+        padding-bottom : 10px;
+        padding-left : 10px;
+       border-left: 3px solid black;
+    } 
+    
+    
+}
+
+@media only screen and (max-width:400px) { 
+/* in questo formato nascondiamo le sidebars*/
+    body {
+            font : 18px/20px "Open Sans", Arial, sans-serif;
+    }#page {
+           width : 1000px;
+           margin-left : auto;
+           margin-right : auto;
+           margin-top : 25px;
+           margin-bottom : 25px;
+           box-shadow : 0 0 10px rgba(0, 0, 0, 0.2);
+   }
+    #sidebar1{
+            display : none;
+    }
+    #sidebar2 {
+            display : none;
+    } 
+    nav {
+        display: none;
+    } 
+    
+    #content {
+        margin-left : 3%;
+        margin-right : 3%;
+        padding-bottom : 10px;
+        padding-left : 10px;
+    } 
 }

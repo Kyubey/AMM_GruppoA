@@ -9,43 +9,49 @@
         <link href="style.css" rel ="stylesheet" type="text/css" media="screen">
     </head>
     <body>
-        <h1>Inserisci i dati della merce</h1>
-        <form action="venditore.html" method="get">
-        <br/>
-        <label for="nome">Nome</label>
-        <br/>
-        <input type="text" name="nome"
-        id="nome" value="Specie Animale" />
-        <br />
-        <label for="foto">Immagine</label>
-        <br />
-        <input type="url" name="foto"
-        id="foto" value="Inserire Url della foto" />
-        <br />
-        <label for="testo">Descrizione</label>
-        <br />
-        <textarea rows="4" cols="20" name= "testo" id="testo">
-            Caratteristiche esemplare
-        </textarea>
-        <br />
-        <label for="prezzo">Prezzo</label>
-        <br />
-        <input type="number" name="prezzo" id="prezzo" min="0" max="10000" />
-        Euro
-        <br />
-        <label for="quantita">Quantità</label>
-        <br />
-        <input type="number" name="quantita" id="quantita" min="1" max="10" />
-        <br />
-        <input type="submit" value="Invia">
-        <input type="reset" value="Cancella">
-       </form>
         
-        <nav>
-            <h3 id="descrizione">Descrizione</h3>
-            <a href="descrizione.html"><p>Per informazioni sul sito.</p></a>
-            <h3 id="login">Login</h3>
-            <a href="login.html"><p>Entra con il tuo nome utente.</p></a>
-        </nav>
+        <div id="page">
+            <nav id="sidebar1">
+                <h3 id="descrizione">Descrizione</h3>
+                <a href="descrizione.html"><p>Per informazioni sul sito.</p></a>
+                <h3 id="login">Login</h3>
+                <a href="login.html"><p>Entra con il tuo nome utente.</p></a>
+            </nav>
+            <div id="content">
+                    <h1>Inserisci i dati della merce</h1>
+                    <form action="venditore.html" method="get">
+                        <div id="venditore">
+                        <br/>
+                        <label for="nome">Nome</label>
+                        <br/>
+                        <input type="text" name="nome"
+                        id="nome" value="Specie Animale" />
+                        <br />
+                        <label for="foto">Immagine</label>
+                        <br />
+                        <input type="url" name="foto"
+                        id="foto" value="Inserire Url della foto" />
+                        <br />
+                        <label for="testo">Descrizione</label>
+                        <br />
+                        <textarea rows="4" cols="20" name= "testo" id="testo">
+                            Caratteristiche esemplare
+                        </textarea>
+                        <br />
+                        <label for="prezzo">Prezzo</label>
+                        <br />
+                        <input type="number" name="prezzo" id="prezzo" min="0" max="10000" />
+                        Euro
+                        <br />
+                        <label for="quantita">Quantità</label>
+                        <br />
+                        <input type="number" name="quantita" id="quantita" min="1" max="10" />
+                        </div>
+                        <br />
+                        <input class="bottone" type="submit" value="Invia">
+                        <input class="bottone" type="reset" value="Cancella">
+                   </form>
+            </div>
+    </div>
         </body>
 </html>
